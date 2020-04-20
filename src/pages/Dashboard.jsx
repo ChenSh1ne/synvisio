@@ -66,13 +66,13 @@ class Dashboard extends Component {
                             <div>
                                 {isSnapShotAvailable && <SnapshotPanel />}
                                 {isSnapShotAvailable && <SnapshotCapture />}
-                                <DownloadSvg />
+                                {/* <DownloadSvg /> */}
                                 <PlotCharacteristics
                                     multiLevel={multiLevel}
                                     multiLevelType={multiLevelType}
                                     plotType={plotType}
                                     configuration={configuration} />
-                                {!multiLevel && <GeneSearch />}
+                                {/* {!multiLevel && <GeneSearch />} */}
                                 {multiLevel ?
                                     <div>
                                         {multiLevelType == 'hive' ?

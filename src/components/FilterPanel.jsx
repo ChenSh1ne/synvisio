@@ -100,33 +100,33 @@ class FilterPanel extends Component {
             <div id='filter-panel-root' className='container-fluid'>
                 <form className="filter-panel-container">
 
-                    <div className="col-sm-12">
+                    {/* <div className="col-sm-12">
                         <div className="checkbox custom-checkbox">
                             <label>
                                 <input type="checkbox" id='hideUnalignedRegions' checked={hideUnalignedRegions} onChange={this.toggleCheckboxChange} />
                                 {"Hide Unaligned Chromosomes/Scaffolds"}
                             </label>
                         </div>
-                    </div>
+                    </div> */}
 
-                    {plotType != 'dotplot' && <div className="col-sm-12">
+                    {/* {plotType != 'dotplot' && <div className="col-sm-12">
                         <div className="checkbox custom-checkbox">
                             <label>
                                 <input type="checkbox" id='markerNormalize' checked={isNormalized} onChange={this.toggleCheckboxChange} />
                                 {"Normalize Chromosome Marker Lengths"}
                             </label>
                         </div>
-                    </div>}
+                    </div>} */}
 
 
-                    {plotType != 'dotplot' && <div className="col-sm-12">
+                    {/* {plotType != 'dotplot' && <div className="col-sm-12">
                         <div className="checkbox custom-checkbox">
                             <label>
                                 <input type="checkbox" id='markerScale' checked={showScale} onChange={this.toggleCheckboxChange} />
                                 {"Show Marker Scales"}
                             </label>
                         </div>
-                    </div>}
+                    </div>} */}
 
                     <div className="col-sm-12">
                         <label htmlFor="sourceChromosomes">Source Chromosomes</label>

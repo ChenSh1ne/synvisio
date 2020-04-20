@@ -62,19 +62,19 @@ class PlotCharacterisitics extends Component {
                 </div>
 
                 <div className='snapshot-inner'>
-                    <span className='text-primary info-text-message'> Select the type of analysis you want to do, single level analysis is for pairwise comparisions while multi level analysis is for comparing more than 2 entities at a time
+                    <span className='text-primary info-text-message'> Select the type of analysis you want to do, regular analysis is for pairwise comparisions while multi genome analysis is for comparing more than 2 entities at a time
                     through stacked parallel plots or hive plots.</span>
                     <RadioButton value={'level-single'} id={'level-single'} className='conf-radio' name='level-select'
-                        label={"Single Level Analysis"}
+                        label={"Regular Analysis"}
                         onChange={this.radioChange}
                         checked={!multiLevel} />
                     <RadioButton value={'level-multi'} id={'level-multi'} className='conf-radio' name='level-select'
-                        label={"Multi Level Analysis"}
+                        label={"Multi Genome Analysis"}
                         onChange={this.radioChange}
                         checked={multiLevel} />
                     {!multiLevel && <div>
                         <RadioButton value={'dashboard'} id={'dashboard'} className='conf-radio' name='plot-select'
-                            label={"Basic Dashboard"}
+                            label={"Composite Analysis Dashboard"}
                             onChange={this.radioChange}
                             checked={plotType == 'dashboard'} />
                         <RadioButton value={'dotplot'} id={'dotplot'} className='conf-radio' name='plot-select'
@@ -96,15 +96,15 @@ class PlotCharacterisitics extends Component {
                             label={"Hive View"}
                             onChange={this.multiRadioChange}
                             checked={multiLevelType == 'hive'} />
-                        <RadioButton value={'cube'} id={'cube'} className='conf-radio' name='multi-view-select'
+                        {/* <RadioButton value={'cube'} id={'cube'} className='conf-radio' name='multi-view-select'
                             label={"3D Cube View"}
                             onChange={this.multiRadioChange}
-                            checked={multiLevelType == 'cube'} />
+                            checked={multiLevelType == 'cube'} /> */}
                     </div>}
 
                     <span className='text-primary info-text-message p-b-0'>
                         If one or more track files have been provided choose one of the
-                        following options to change the track type and their color scale,
+                        following options to change the track type,
                         However tracks are only shown for some plots and not all.
                     </span>
                     <div className='track-select-box'>
@@ -128,7 +128,7 @@ class PlotCharacterisitics extends Component {
                                 <option value='track-scatter'>Scatter Plot</option>
                             </select>
                         </span>
-                        <span className='select-wrapper'>Track Color Palette
+                        {/* <span className='select-wrapper'>Track Color Palette
                         <select className='form-control'
                                 id='track-select-color'
                                 onChange={this.onTrackTypeChange}
@@ -138,7 +138,7 @@ class PlotCharacterisitics extends Component {
                                 <option value='green'>Green</option>
                                 <option value='orange'>Orange</option>
                             </select>
-                        </span>
+                        </span> */}
                     </div>
                 </div>
             </div>

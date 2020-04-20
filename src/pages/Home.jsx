@@ -10,41 +10,12 @@ class Home extends Component {
       <div>
 
         <div className="home-header" style={backgroundStyle}>
-          <div className="container">
-            <div className='col-lg-12 text-lg-left text-md-center text-sm-center text-xs-center'><h1>SynVisio</h1>
-              <p>An Interactive Multiscale Synteny Visualization Tool for <a href="http://chibba.pgml.uga.edu/mcscan2/">McScanX</a>.</p>
-            </div>
-          </div>
         </div>
 
         <div className="container home-body">
-          <h1>How does it work ?</h1>
-          <p>SynVisio lets you explore the results of <a href='http://chibba.pgml.uga.edu/mcscan2/'>McScanX</a> a popular synteny and collinearity detection toolkit and generate publication ready images.</p>
-          <p>SynVisio requires two files to run:</p>
-          <ul>
-            <li>The <b>simplified gff file</b> that was used as an input for a McScanX query.</li>
-            <li>The <b>collinearity file</b> generated as an output by McScanX for the same input query.</li>
-            <li>Optional <b>track file</b> in bedgraph format to annotate the generated charts.</li>
-          </ul>
-          <p>
-            SynVisio offers different types of visualizations such as <b>Linear Parallel plots</b>, <b>Hive plots</b>, <b>Stacked Parallel Plots </b> and <b>Dot plots</b>.
-            Users can configure the type of plots required and then choose the source and the target chromosomes that need to be mapped.
-            Users also have option to download the generated visualizations in publication ready SVG format. </p>
 
-          <p>Use the following links for tutorial videos on using SynVisio.
-          They might be outdated but will be updated shortly.
-            Meanwhile you can drop a mail to venkat.bandi@usask.ca for help with any particular features.</p>
-          <p><a href='https://youtu.be/83ep_AuMWak'> Basic Dashboard Demo</a></p>
-          <p><a href='https://youtu.be/bLqeXwFDUbQ'> Multi Analysis Hive plot</a></p>
-          <p><a href='https://youtu.be/e6CNFLjGFmQ'> Visualizing additional tracks</a></p>
-          <p><a href='https://youtu.be/dkInV2QHGVY'> Support for Revisitation using Snapshot Feature </a></p>
-          <p><a href='https://youtu.be/C4fTi9bVHEY'> Detailed description of all features in SynVisio </a></p>
-
-          <p>SynVisio works best when opened in <b>Google chrome.</b></p>
-
-          <h1>What Next ?</h1>
-          <p>We are working on adding several new features to this tool. We have loaded up some sample files below that you can play around with :</p>
-          <ul>
+          <h1> GI Demo Files, Click on any link to explore the dataset </h1>
+                 <ul>
             <li> <Link to={'/Dashboard/bn'}> Bn </Link> - Brassica napus , Canola </li>
             <li> <Link to={'/Dashboard/bnigra_bol_brapa_ortho'}> B.nigra vs B.oleracea vs B.rapa </Link> - 3 Way comparision between Brassica nigra , Brassica rapa and Brassica oleracea </li>
             <li> <Link to={'/Dashboard/ca_lc_mt'}> Ca vs Lc vs Mt </Link> - 3 Way comparision between Chickpea , Lentils and Barrel Meddick </li>

@@ -277,7 +277,7 @@ class TreeView extends Component {
         return (
             <div className='treeView-root text-xs-center'>
                 <TreeFilterPanel configuration={configuration} chromosomeMap={chromosomeMap} />
-                <AdvancedFilterPanel width={treeView.width} />
+                {/* <AdvancedFilterPanel width={treeView.width} /> */}
                 {alignmentList.length > 0 &&
                     <svg className='treeViewSVG'
                         style={{ 'background': isDark ? '#1a1c22' : 'white' }}

@@ -188,7 +188,7 @@ class HiveView extends Component {
         return (
             <div className='hiveView-root text-xs-center'>
                 <HiveFilterPanel configuration={configuration} chromosomeMap={chromosomeMap} />
-                <AdvancedFilterPanel width={hiveView.width} />
+                {/* <AdvancedFilterPanel width={hiveView.width} /> */}
                 {alignmentList.length > 0 &&
                     <svg className='hiveViewSVG'
                         style={{ 'background': isDark ? '#252830' : 'white' }}

@@ -47,11 +47,11 @@ class NavBar extends Component {
                                     <span className="icon icon-line-graph"></span> SYNTENY Dashboard
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to='/Upload'>
                                     <span className="icon icon-publish"></span> Upload OWN Data to Dashboard
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
 
                         <ul className='nav navbar-nav pull-right' onClick={this.props.toggleTheme}>

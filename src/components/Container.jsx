@@ -15,7 +15,7 @@ export default class Container extends Component {
                 <div id='container-body'>
                     {this.props.children}
                 </div>
-                <footer className="footer w-full m-t">
+                {/* <footer className="footer w-full m-t">
                     <div className="container-fluid">
                         <div className='w-md footer-inner'>
                             <span className="left text-xs-left">
@@ -28,7 +28,7 @@ export default class Container extends Component {
                             <a className="footer-link right" href="http://hci.usask.ca/"> <img src="assets/img/interaction_lab.gif" height="30" /></a>
                         </div>
                     </div>
-                </footer>
+                </footer> */}
             </div>
         );
     }

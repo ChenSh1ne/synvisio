@@ -33,7 +33,7 @@ export default class SingleLevel extends Component {
         return (
             <div>
                 <Information />
-                <AdvancedFilterPanel />
+                {/* <AdvancedFilterPanel /> */}
                 {isMarkerListEmpty ?
                     <h2 className='text-danger text-xs-center m-t-lg'>Source or Target Empty</h2> :
                     areLinksAvailable &&
